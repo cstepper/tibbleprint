@@ -84,3 +84,12 @@ obj_sum.dataframe_as_tibble <- function (x) {
   if(any(toset)) options(op.tibbleprint[toset])
   invisible()
 }
+
+
+# data.table helpers ----
+#' @export
+print.data.table = print.data.frame
+#' @export
+format.data.table = format.data.frame
+
+
